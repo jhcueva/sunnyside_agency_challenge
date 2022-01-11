@@ -1,0 +1,278 @@
+:root {
+    --light-blue: #4dbeff;
+    --white: #fefbf8;
+    --gray: #868693;
+    --light-gray: #a5a6a8;
+    --dark-green; #174A3E;
+    --green: #23564D;
+    --turquoise: #2C7566;
+    --light-green: #91d3c5;
+    --tittle: 'Fraunces', serif;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Barlow';
+}
+.nav {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: var(--light-blue);
+}
+.nav__checkbox {
+    display: none;
+}
+.nav__toggle {
+    cursor: pointer;
+}
+.menu-icon,
+.close-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    background-image: url('./images/icon-hamburger.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.close-icon {
+    display: none;
+    background-image: url('./images/close.png');
+}
+.nav__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 5px;
+}
+.nav__menu .logo {
+    width: 130px;
+    height: 30px;
+    object-fit: contain;
+    object-position: center;
+}
+.nav__menu a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--gray);
+}
+.nav__menu li {
+    display: none;
+    list-style: none;
+    text-decoration: none;
+}
+.nav__menu li:first-child {
+    display: block;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+#nav__checkbox:checked ~ ul.nav__menu li,
+#nav__checkbox:checked ~ label.nav__toggle .close-icon {
+    display: block;
+}
+#nav__checkbox:checked ~ label.nav__toggle .menu-icon {
+    display: none;
+}
+.header {
+    width: 100%;
+    height: 400px;
+    background-color: var(--light-blue);
+    background-image: url(./images/mobile/image-header.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header .header-title {
+    padding: 60px 25px;
+    font-family: var(--tittle);
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+    text-align: center;
+    color: var(--white);
+}
+.header .arrow-down {
+    width: 33px;
+    transform: translate(calc(50vw - 16.5px), -9px);
+    text-align: center;
+}
+
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.main-section h2 {
+    text-align: center;
+    font-size: 2.7rem;
+    font-family: var(--tittle);
+}
+.main-section .white-background {
+    height: 60vh;
+    padding: 60px  25px;
+    background-color: var(--white);
+    text-align: center;
+}
+.main-section .white-background p {
+    padding: 25px 0;
+    color: var(--gray);
+    line-height: 25px;
+    font-size: 1.5rem;
+}
+.main-section a {
+    padding: 40px 0;
+    font-family: var(--tittle);
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+.main-section .image-background {
+    padding: 30px  25px;
+    text-align: center;
+}
+.main-section .image-background h2 {
+    transform: translate(0, 310px);
+    color: #1f5347;
+}
+.main-section .image-background p {
+    transform: translate(0, 310px);
+    padding: 18px 0;
+    line-height: 25px;
+    font-size: 1.3rem;
+
+    color: #2d6759;
+}
+.main-section .egg,
+.main-section .stand-out {
+    display: block;
+    width: 100%;
+    height: 40vh;
+    padding: 0;
+    background-image: url('./images/mobile/image-transform.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-section .stand-out {
+    background-image: url('./images/mobile/image-stand-out.jpg');
+}
+.main-container .cherry-background,
+.main-section .orange-background {
+    /* display: block; */
+    width: 100%;
+    height: 510px;
+    background-image: url('./images/mobile/image-graphic-design.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-section .orange-background {
+    background-image: url('./images/mobile/image-photography.jpg');
+}
+
+.testimonial-container {
+    width: 100%;
+    padding: 30px 25px;
+    background-color: var(--white);
+    text-align: center;
+}
+.testimonial-container .testimonial-title {
+    padding: 10px 0;
+    font-size: 1.2rem;
+    font-family: var(--tittle);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--light-gray);
+}
+.testimonial-section {
+    display: flex;
+    flex-direction: column;
+}
+.testimonial .image-testimonial {
+    display: block;
+    width: 65px;
+    height: 65px;
+    margin: 30px auto;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+
+}
+.testimonial span {
+    line-height: 25px;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: var(--gray);
+}
+.testimonial .name {
+    padding-top: 25px;
+    font-family: var(--tittle);
+    font-size: 1.5rem;
+}
+.testimonial .work {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+    color: var(--light-gray);
+}
+
+.image-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.image-section .image {
+    width: 50vw;
+    height: 30vh;
+    object-position: center;
+    object-fit: cover;
+}
+
+.footer-container {
+    width: 100%;
+    height: 300px;
+    padding: 40px 0;
+    text-align: center;
+    background-color: var(--light-green);
+}
+.footer-container .logo-footer {
+    width: 150px;
+    padding-bottom: 20px;
+}
+.footer-container .links {
+    padding: 10px 0 30px 0;
+}
+.links a {
+    padding: 5px 25px;
+    color: var(--turquoise);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.footer-container .social-media img {
+    padding: 0 15px;
+    padding-top: 50px;
+}
+
+.attribution {
+    padding: 20px 0;
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--turquoise);
+    background-color: var(--light-green);
+}
+.attribution a {
+    color: var(--dark-green);
+}

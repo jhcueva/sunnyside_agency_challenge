@@ -1,0 +1,56 @@
+.header {
+    background-image: url('../images/desktop/image-header.jpg');
+}
+.main-section .egg,
+.main-section .stand-out,
+.main-section .white-background,
+.main-section .image-background {
+    flex: 1 1 50vw;
+}
+.main-section .egg,
+.main-section .stand-out {
+    display: block;
+    height: auto;
+    background-image: url('../images/desktop/image-transform.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-section .stand-out {
+    background-image: url('../images/desktop/image-stand-out.jpg');
+}
+.main-section .egg {
+    order: 2;
+}
+.main-section .transform {
+    order: 1;
+}
+.main-section .stand-out {
+    order: 3;
+}
+.main-section .stand {
+    order: 4;
+}
+.main-section .cherry-background {
+    order: 5;
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+}
+.main-section .orange-background {
+    order: 6;
+    background-image: url('../images/desktop/image-photography.jpg');
+}
+.testimonial-section {
+    flex-direction: row;
+}
+.image-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 30vh;
+    grid-auto-rows: auto;
+}
+.image-section .image {
+    width: 25vw;
+    height: 30vh;
+    object-position: center;
+    object-fit: cover;
+}
