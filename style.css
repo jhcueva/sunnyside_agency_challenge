@@ -110,8 +110,6 @@ html {
 }
 
 .main-section {
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
 }
 

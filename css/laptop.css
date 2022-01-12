@@ -1,10 +1,90 @@
-.main-section .white-background,
-.main-section .white-background h2 {
-    text-align: start;
+
+.main-section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 50vw));
+    grid-template-rows: repeat(3, minmax(300px, 600px));
+    width: 100%;
 }
 .main-section h2 {
-    font-size: 3.4rem;
+    font-size: 4.5rem;
 }
-.main-section .white-background {
-    padding: 60px 70px;
+.main-section .egg {
+    order: 2;
+}
+.main-section .transform,
+.main-section .stand {
+    height: auto;
+    padding: 130px 190px;
+    text-align: start;
+    order: 1;
+}
+.main-section .white-background h2 {
+    font-size: 5.5rem;
+    text-align: start;
+}
+.main-section .white-background p {
+    font-size: 2.3rem;
+    line-height: 35px;
+    text-align: start;
+}
+.main-section .learn {
+    text-align: center;
+}
+.main-section .stand-out {
+    order: 3;
+}
+.main-section .stand {
+    order: 4;
+}
+.main-section .image-background p {
+    transform: translate(0, 310px);
+    padding: 45px 275px;
+    font-size: 1.7rem;
+}
+.main-section .cherry-background {
+    height: auto;
+    order: 5;
+    background-image: url('../images/desktop/image-graphic-design.jpg');
+}
+.main-section .orange-background {
+    height: auto;
+    order: 6;
+    background-image: url('../images/desktop/image-photography.jpg');
+}
+.main-section .egg,
+.main-section .stand-out {
+    display: block;
+    height: auto;
+    background-image: url('../images/desktop/image-transform.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-section .stand-out {
+    background-image: url('../images/desktop/image-stand-out.jpg');
+}
+.main-section .cherry-background {
+    background-image: url('../images/desktop/image-graphic-design.jpg');
+}
+.main-section .orange-background {
+    background-image: url('../images/desktop/image-photography.jpg');
+}
+.testimonial-section {
+    flex-direction: row;
+}
+.testimonial-section span {
+    display: block;
+    padding: 0 90px;
+}
+.image-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 30vh;
+    grid-auto-rows: auto;
+}
+.image-section .image {
+    width: 25vw;
+    height: 30vh;
+    object-position: center;
+    object-fit: cover;
 }
