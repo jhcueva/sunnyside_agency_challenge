@@ -163,6 +163,7 @@ html {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #f9d304;
 }
 .main-section .stand-out {
     background-image: url('./images/mobile/image-stand-out.jpg');

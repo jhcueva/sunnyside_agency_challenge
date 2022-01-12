@@ -8,7 +8,15 @@
 .main-section h2 {
     font-size: 4.5rem;
 }
+.main-section a {
+    display: block;
+    position: relative;
+    text-align-last: start;
+    font-size: 2.2rem;
+}
 .main-section .egg {
+    background-color: #f9d304;
+    background-size: contain;
     order: 2;
 }
 .main-section .transform,
@@ -27,6 +35,7 @@
     line-height: 35px;
     text-align: start;
 }
+
 .main-section .learn {
     text-align: center;
 }
@@ -69,12 +78,29 @@
 .main-section .orange-background {
     background-image: url('../images/desktop/image-photography.jpg');
 }
+.testimonial-container {
+    height: 650px;
+    padding: 100px 200px;
+}
+.testimonial-container .testimonial-title {
+    padding: 25px 0;
+    font-size: 3rem;
+}
 .testimonial-section {
     flex-direction: row;
 }
+.testimonial .image-testimonial {
+    width: 70px;
+    height: 70px;
+    margin: 60px auto;
+}
+.testimonial .name {
+    font-size: 2rem;
+}
 .testimonial-section span {
     display: block;
-    padding: 0 90px;
+    padding: 0 70px;
+    font-size: 2rem;
 }
 .image-section {
     display: grid;
