@@ -1,4 +1,36 @@
+.nav__menu .logo {
+    width: 284px;
+    height: 50px;
+    object-fit: contain;
+    object-position: center;
+}
+.nav__toggle {
+    display: none;
+}
+.nav__menu {
+    flex-direction: row;
+    margin: 3rem 2rem;
+    margin-right: 4rem;
+    gap: 4rem;
 
+}
+.nav__menu li {
+    display: block;
+}
+.nav__menu li:last-child {
+    background-color: var(--white);
+}
+.nav__menu a {
+    color: var(--white);
+    font-size: 2rem;
+}
+.nav__menu li:last-child:hover {
+    cursor: pointer;
+    background-color: #6ecefe;
+}
+.nav__menu li:last-child:hover a {
+    color: var(--white);
+}
 .main-section {
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 50vw));
@@ -22,7 +54,7 @@
 .main-section .transform,
 .main-section .stand {
     height: auto;
-    padding: 130px 190px;
+    padding: 100px 190px;
     text-align: start;
     order: 1;
 }

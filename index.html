@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&amp;family=Fraunces:wght@700;900&amp;display=swap" rel="stylesheet">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
   <link rel="stylesheet" href="./style.css">
-  <!-- <link rel="stylesheet" href="./css/mobileL.css" media="(min-width: 350px)"> -->
+  <link rel="stylesheet" href="./css/mobileL.css" media="(min-width: 350px)">
   <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 630px)">
   <link rel="stylesheet" href="./css/laptop.css" media="(min-width: 1024px)">
 
@@ -16,19 +16,19 @@
 <body>
   <header>
     <nav class="nav">
+      <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+      <label for="nav__checkbox" class="nav__toggle">
+        <svg class="menu" width="24" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="#FFF" fill-rule="evenodd"/></svg>
+      </label>
+
         <ul class="nav__menu">
-          <img src="./images/logo.svg" alt="company logo" class="logo">
+          <li class="menu-logo"><img src="./images/logo.svg" alt="company logo" class="logo"></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
         
-      <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
-      <label for="nav__checkbox" class="nav__toggle">
-        <span class="menu-icon"></span>
-        <span class="close-icon"></span>
-      </label>
     </nav>
     <section class="header">
       <h1 class="header-title">WE ARE CREATIVES</h1>
