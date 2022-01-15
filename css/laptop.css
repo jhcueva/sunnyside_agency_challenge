@@ -7,12 +7,20 @@
 .nav__toggle {
     display: none;
 }
-.nav__menu {
+.nav__menu,
+.nav__menu .menu-container{
+    display: flex;
     flex-direction: row;
     margin: 3rem 2rem;
     margin-right: 4rem;
     gap: 4rem;
-
+}
+.nav__menu .menu-container {
+    width: auto;
+    height: auto;
+    position: relative;
+    background-color: var(--light-blue);
+    transform: none;
 }
 .nav__menu li {
     display: block;
