@@ -4,7 +4,7 @@
 
 ## Welcome! 👋
 
-Thanks for checking out [Sunnyside agency landing page](https://jhcueva.github.io/sunnyside_agency_challenge/) front-end coding challenge.
+Thanks for checking out [Sunnyside agency landing page](https://sunnyside-agency-challenge.vercel.app) front-end coding challenge.
 
 ## The challenge
 
