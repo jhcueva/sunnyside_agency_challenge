@@ -3,7 +3,7 @@
     --white: #fefbf8;
     --gray: #868693;
     --light-gray: #dadce0;
-    --dark-green; #174A3E;
+    --dark-green: #174A3E;
     --green: #23564D;
     --turquoise: #2C7566;
     --light-green: #91d3c5;
@@ -243,7 +243,7 @@ body {
     grid-template-rows: repeat(2, 1fr);
 }
 .image-section .image {
-    width: 50vw;
+    width: 100%;
     height: 30vh;
     object-position: center;
     object-fit: cover;
